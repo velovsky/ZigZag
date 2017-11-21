@@ -1,0 +1,45 @@
+<html>
+<head>
+	<script src="libs/jquery-3.2.1.js"></script>
+	<script src="libs/bst.js"></script>
+	<script src="libs/manager.js"></script>
+</head>
+<body>
+	<h2>Binary Search Tree</h2>
+		 (Initial BinaryTree - static image)
+    <pre>                25                           
+           /           \         
+          15            50       
+         /  \           /  \                   
+      10    22       35        70                 
+   </pre>
+    <br>
+	Search Node:
+  <input id="input_search" type="number" name="search_bst" value="1">
+	Result:
+	<label id="output_search"></label>
+	<br>
+	<input type="submit" onclick="manager.search()" value="Search">
+	<br><br>
+	Insert Node:
+  <input id="input_insert" type="number" name="insert_bst" value="1">
+	Result:
+	<label id="output_insert"></label>
+	<br>
+	<input value="Insert" onclick="manager.insert()" type="submit"><br><br>
+
+	Delete Node:
+<input id="input_delete" type="number" name="delete_bst" value="1">
+Result:
+<label id="output_delete"></label>
+<br>
+<input value="Delete" onclick="manager.delete()" type="submit">
+
+<br><br>
+ZigZag's:
+<label id="output_zigzag"></label>
+<br>
+<input type="submit" onclick="manager.main()" value="ZigZag">
+  
+</body>
+</html>
